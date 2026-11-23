@@ -1,0 +1,28 @@
+seed: 20261122
+salt: shotlab-v1
+seasons:
+  S1: 2676a
+  S2: fe055
+  T: d7a2d
+directions:
+  - [S1, S2]
+  - [S2, S1]
+month_blocks:
+  OCT: 0
+  NOV: 0
+  DEC: 1
+  JAN: 2
+  FEB: 3
+  MAR: 4
+  APR: 4
+panel_size: 50000
+tuning_query_size: 10000
+learning_curve:
+  sizes: [500, 2000, 8000, 32000, 100000]
+  replicates: {500: 5, 2000: 5, 8000: 3, 32000: 3, 100000: 1}
+bootstrap_draws: 2000
+tie_threshold_log_loss: 0.001
+data_sha256:
+  training.csv.gz: d56215f3bbe89f42e056e7b3518124cfca50a9eecbe64b3804902f0572f80a64
+  testing.csv.gz: 969a39ad6f69797c34f5e1382f0bda3753288b92ef170eeb037707284789f8e6
+manifest_sha256: ae17c006cd580bfcba33f4abf273d00aa41ab468eaf0853f67f7f13114efe94e
