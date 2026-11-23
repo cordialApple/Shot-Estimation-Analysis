@@ -1,0 +1,15 @@
+checkpoint_version: tabicl-classifier-v2-20260212.ckpt
+param_grid:
+  m: [30, 100, 300, 1000, 3000]
+  context_rows: [4000, 16000, 64000, max]
+  n_estimators: [8, 32]
+  sampling: [uniform, stratified]
+simplicity_order:
+  - [m, desc]
+  - [context_rows, asc]
+  - [n_estimators, asc]
+  - [sampling, desc]
+options:
+  batch_size: 8
+  kv_cache: false
+  max_context: null

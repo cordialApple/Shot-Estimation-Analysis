@@ -1,0 +1,15 @@
+param_grid:
+  m: [30, 100, 300, 1000, 3000]
+  context_rows: [4000, 16000, 64000, max]
+  n_estimators: [8, 32]
+  sampling: [uniform, stratified]
+simplicity_order:
+  - [m, desc]
+  - [context_rows, asc]
+  - [n_estimators, asc]
+  - [sampling, desc]
+options:
+  batch_size: 1
+  cache_context: true
+  keep_cache_on_device: true
+  max_context: null

@@ -1,0 +1,10 @@
+param_grid:
+  rates__m: [30, 100, 300, 1000, 3000]
+  design__n_knots: [5, 8]
+  design__interactions: [false, true]
+  model__C: [0.01, 0.1, 1, 10]
+simplicity_order:
+  - [rates__m, desc]
+  - [design__interactions, asc]
+  - [design__n_knots, asc]
+  - [model__C, asc]

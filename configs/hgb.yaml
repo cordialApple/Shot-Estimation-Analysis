@@ -1,0 +1,14 @@
+param_grid:
+  rates__m: [30, 100, 300, 1000, 3000]
+  model__learning_rate: [0.03, 0.1]
+  model__max_leaf_nodes: [15, 31, 63]
+  model__min_samples_leaf: [50, 200]
+  model__l2_regularization: [0.0, 1.0]
+  model__max_iter: [200, 500, 1000]
+simplicity_order:
+  - [rates__m, desc]
+  - [model__max_leaf_nodes, asc]
+  - [model__max_iter, asc]
+  - [model__learning_rate, asc]
+  - [model__min_samples_leaf, desc]
+  - [model__l2_regularization, desc]
